@@ -1,0 +1,10 @@
+select {
+    background-color: white;
+    border: cornflowerblue solid;
+    color: #000000
+}
+input[type="password"],[type="text"]{
+    background-color: #ffffff;
+    border: cornflowerblue solid;
+    width: 30em;
+}

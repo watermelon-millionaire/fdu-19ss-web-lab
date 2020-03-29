@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    color: black;
+    background-color: white;
+}
+header {
+    color: #000000;
+    background-color: #ffffff;
+    text-align: right;
+    padding-right；: 30px;
+    height: 30px;
+}
+nav {
+    float: left;
+    margin: auto 3em;
+    padding-left: 0;
+}
+li {
+    display: inline-block;
+}
+small {
+    color: white;
+}
+blockquote {
+    margin: 0;
+    width: 5%;
+    font-size: small;
+    background-color: cornflowerblue;
+    padding: 0em;
+}
+
