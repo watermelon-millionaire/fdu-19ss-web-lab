@@ -1,0 +1,103 @@
+body{
+    background-image: url('images/home.jpeg');
+    background-size: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #8bc48b;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    border-radius: 6px;
+}
+
+li{
+    float:left;
+}
+li a,.dropbutton{
+    display:inline-block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover,.dropdown:hover{
+    background-color: #4f6877;
+}
+.dropdown{
+    display:inline-block;
+    float: right;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color:black;
+    padding:12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.up{
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    width:30%;
+}
+
+.choose{
+    margin-left: 35px;
+}
+
+.photo{
+    width:200px;
+    background-image: url('images/display2.jpeg');
+    margin-left: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.detail{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+    height:420px;
+}
+
+.block{
+    border:none;
+    border-radius: 6px;
+    background-color: antiquewhite;
+    height: 25px;
+    width: 300px;
+    text-align: center;
+}
+
+.button{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 12px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: lightyellow;
+    text-align: center;
+    height: 25px;
+    width: 100px;
+}
+
+.footer{
+    text-align: left;
+}

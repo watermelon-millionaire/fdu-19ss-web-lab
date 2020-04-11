@@ -1,0 +1,140 @@
+body{
+    background-image: url('images/browse.jpeg');
+    background-size: 100%;
+}
+
+.footer{
+  color:white;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #8bc48b;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    border-radius: 6px;
+}
+
+li{
+    float:left;
+}
+li a,.dropbutton{
+    display:inline-block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover,.dropdown:hover{
+    background-color: #4f6877;
+}
+.dropdown{
+    display:inline-block;
+    float: right;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color:black;
+    padding:12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.browse{
+    background-color: rgba(57, 128, 91, 0.9);
+}
+
+.column1{
+    float:left;
+    width:20%;
+}
+.column2{
+    float:right;
+    width:80%;
+}
+.row1:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.search{
+    height:500px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color:white;
+}
+input{
+    height:25px;
+    border:none;
+    margin-left: 5px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+button{
+    height:25px;
+    border-radius: 6px;
+    border:none;
+    background-color: antiquewhite;
+
+}
+.button{
+    height:25px;
+    width:100px;
+    border:none;
+    margin-left: 5px;
+    background-color: lightyellow;
+    text-align: center;
+    border-radius: 6px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.city{
+    height:25px;
+    width:100px;
+    border:none;
+    margin-left: 5px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 6px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.show{
+    height:750px;
+}
+
+select{
+    margin-top:20px;
+    font-size: 24px;
+}
+
+table{
+    width:100%;
+    height:80%;
+    margin-top: 5px;
+    text-align: left;
+}
+
+img{
+    border-radius: 6px;
+}
+
+ul.nextpage{
+    background-color: #93b4c3;
+    width:320px;
+    margin-left: 300px;
+    margin-top: 10px;
+}

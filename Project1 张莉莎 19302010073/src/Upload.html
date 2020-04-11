@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <script>
+        function previewFile() { //用filereader把img赋给空的src
+            var preview = document.querySelector('img');
+            var file    = document.querySelector('input[type=file]').files[0];
+            var reader  = new FileReader();
+
+            reader.onloadend = function () {
+                preview.src = reader.result;
+            }
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "";
+            }
+        }
+    </script>
+    <link href="upload.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="Browse.html">Browse</a></li>
+    <li><a href="Search.html">Search</a></li>
+    <div class="dropdown">
+        <a class="dropbutton">My Account &#9660</a>
+        <div class="dropdown-content">
+            <a href="Upload.html">&#8679 Upload</a>
+            <a href="myphoto.html">&#9733 MyPhoto</a>
+            <a href="collection.html">&#10084 MyCollection</a>
+            <a href="login.html">&#10004 Login</a>
+        </div>
+    </div>
+</ul>
+
+<div class="up">
+  <input class="choose" type="file" onchange="previewFile()"><br>
+  <img class="photo" src="" height="200" alt="Choose your photo to upload.">
+</div>
+
+<div class="detail">
+    <h4>Title:</h4>
+    <input class="block" type="text" placeholder="请输入图片标题">
+    <h4>Description about the photo:</h4>
+    <input class="block" type="text" placeholder="请输入图片描述">
+    <h4>Photographed in (country):</h4>
+    <input class="block" type="text" placeholder="请输入图片拍摄的国家">
+    <h4>Photographed in (city):</h4>
+    <input class="block" type="text" placeholder="请输入图片拍摄的城市"><br>
+    <a href="detail.html"><input type="button" class="button" value="Submit"  onclick="alert('已提交')"></a>
+</div>
+
+
+<div class="footer">
+    <p>Copyright &copy; 2020-2025 WatermelonMillionaire.All Rights Reserved.</p>
+</div>
+
+</body>
+</html>

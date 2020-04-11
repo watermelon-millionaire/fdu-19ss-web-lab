@@ -1,0 +1,31 @@
+div{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 35%;
+    padding-left: 40%;
+}
+body{
+    background-image: url('images/background.jpg');
+}
+footer{
+    color: white;
+}
+.button {
+    background-color: #4f6877;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Comic Sans MS",cursive,sans-serif;
+}
+body{
+    font-family: "Comic Sans MS",cursive,sans-serif;
+    color: #658291;
+}
+input{
+    background-color: #658291;
+    border:none;
+    border-radius:6px;
+    height:2em;
+}

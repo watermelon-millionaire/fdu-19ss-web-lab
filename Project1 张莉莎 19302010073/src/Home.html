@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <script>
+        window.onscroll=function(){
+            if(document.body.scrollTop||document.documentElement.scrollTop>0){
+                document.getElementById('rTop').style.display="block"
+            }else{
+                document.getElementById('rTop').style.display="none"
+            }
+        }
+        function toTop(){
+            window.scrollTo('0','0');
+            document.getElementById('rTop').style.display="none"
+        }
+    </script>
+    <link href="Home.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<ul>
+    <li><a href="Home.html" class="homepage">&#10140<em>Home</em></a></li>
+    <li><a href="Browse.html">Browse</a></li>
+    <li><a href="Search.html">Search</a></li>
+    <div class="dropdown">
+        <a class="dropbutton">My Account &#9660</a>
+        <div class="dropdown-content">
+            <a href="Upload.html">&#8679 Upload</a>
+            <a href="myphoto.html">&#9733 MyPhoto</a>
+            <a href="collection.html">&#10084 MyCollection</a>
+            <a href="login.html">&#10004 Login</a>
+        </div>
+    </div>
+</ul>
+<div class="headphoto">
+  <img src="images/headphoto.jpeg" width=100% height="500">
+</div>
+<div class="row1">
+    <div class="column1">
+        <div class="pictures">
+            <a href="detail.html"><img src="images/1.jpeg"></a>
+            <h3>Flowers</h3>
+            <h4>Spring is coming.</h4>
+        </div>
+    </div>
+    <div class="column1">
+        <div class="pictures">
+            <a href="detail.html"><img src="images/2.jpeg"></a>
+            <h3>Forests</h3>
+            <h4>Since when have forests become silent?</h4>
+        </div>
+    </div>
+    <div class="column1">
+        <div class="pictures">
+            <a href="detail.html"><img src="images/3.jpeg"></a>
+            <h3>Overlook</h3>
+            <h4>As if you were beneath the sky.</h4>
+        </div>
+    </div>
+</div>
+<div class="row2">
+    <div class="column2">
+            <div class="pictures">
+                <a href="detail.html"><img src="images/4.jpeg"></a>
+                <h3>Curtain</h3>
+                <h4>Watch the world outside through curtains.</h4>
+            </div>
+    </div>
+    <div class="column2">
+        <div class="pictures">
+            <a href="detail.html"><img src="images/5.jpeg"></a>
+            <h3>Castles</h3>
+            <h4>Come to realize your dreams and fantasy in childhood.</h4>
+        </div>
+    </div>
+    <div class="column2">
+        <div class="pictures">
+            <a href="detail.html"><img src="images/6.jpeg"></a>
+            <h3>Dusk</h3>
+            <h4>Walk along the path at dusk.</h4>
+        </div>
+    </div>
+</div>
+<div class="refresh">
+    <input type="button" class="button" value="&#8634" onclick="alert('图片已刷新')">
+</div>
+
+<div class="rTop" id="rTop" onclick="toTop()">&#8679</div>
+
+<div class="footer">
+    <p><strong>&#10049 Contact us &#10049 Exception Clause &#10049 Any Suggestion</strong></p>
+    <p>Copyright &copy; 2020-2025 WatermelonMillionaire.All Rights Reserved.</p>
+</div>
+
+
+</body>
+</html>
