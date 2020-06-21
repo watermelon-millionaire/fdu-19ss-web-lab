@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse</title>
+    <script type="text/javascript">
+        cities = new Object();
+        cities['China']=new Array('Beijing', 'Shanghai', 'Guangzhou', 'Chongqing');
+        cities['America']=new Array('New York','Seattle','Chicago','Los Angeles');
+        cities['Japan']=new Array('Tokyo','Osaka','Fukuoka','Hokkaido');
+        cities['Korea']=new Array('Seoul','Busan','Incheon','Jeju Island');
+
+        function set_city(province, city)
+        {
+            var pv, cv;
+            var i, ii;
+
+            pv=province.value;
+            cv=city.value;
+
+            city.length=1;
+
+            if(pv=='0') return;
+            if(typeof(cities[pv])=='undefined') return;
+
+            for(i=0; i<cities[pv].length; i++)
+            {
+                ii = i+1;
+                city.options[ii] = new Option();
+                city.options[ii].text = cities[pv][i];
+                city.options[ii].value = cities[pv][i];
+            }
+        }
+    </script>
+    <link href="browse.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<ul>
+    <li><a href="Home.html" >Home</a></li>
+    <li><a href="Browse.html" class="browse">&#10140<em>Browse</em></a></li>
+    <li><a href="Search.html">Search</a></li>
+    <div class="dropdown">
+        <a class="dropbutton">My Account &#9660</a>
+        <div class="dropdown-content">
+            <a href="Upload.html">&#8679 Upload</a>
+            <a href="myphoto.html">&#9733 MyPhoto</a>
+            <a href="collection.html">&#10084 MyCollection</a>
+            <a href="login.html">&#10004 Login</a>
+        </div>
+    </div>
+</ul>
+
+<div class="row1">
+    <div class="column1">
+        <div class="search">
+            <p>Search by Title</p>
+            <input type="text" placeholder="请输入图片标题进行搜索">
+            <button onclick="alert('已根据标题进行搜索')"><i>&#8678 Search</i></button>
+            <p>Hot Country</p>
+            <input type="button" class="button" value="America" onclick="alert('已根据您选择的国家筛选图片')">
+            <input type="button" class="button" value="Britain" onclick="alert('已根据您选择的国家筛选图片')">
+            <input type="button" class="button" value="Canada" onclick="alert('已根据您选择的国家筛选图片')">
+            <input type="button" class="button" value="China" onclick="alert('已根据您选择的国家筛选图片')">
+            <input type="button" class="button" value="Japan" onclick="alert('已根据您选择的国家筛选图片')">
+            <input type="button" class="button" value="Korea" onclick="alert('已根据您选择的国家筛选图片')">
+            <input type="button" class="button" value="Thailand" onclick="alert('已根据您选择的国家筛选图片')">
+            <input type="button" class="button" value="Germany" onclick="alert('已根据您选择的国家筛选图片')">
+            <p>Hot City</p>
+            <input type="button" class="city" value="Shanghai" onclick="alert('已根据您选择的城市筛选图片')">
+            <input type="button" class="city" value="Beijing" onclick="alert('已根据您选择的城市筛选图片')">
+            <input type="button" class="city" value="Guangzhou" onclick="alert('已根据您选择的城市筛选图片')">
+            <input type="button" class="city" value="Osaka" onclick="alert('已根据您选择的城市筛选图片')">
+            <input type="button" class="city" value="Seoul" onclick="alert('已根据您选择的城市筛选图片')">
+            <input type="button" class="city" value="Vancouver" onclick="alert('已根据您选择的城市筛选图片')">
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="show">
+            <form name="form" action="" method="get">
+          <select class="content">
+              <option value="filter1" selected onclick="alert('请选择图片内容进行筛选')">Filter by Content</option>
+              <option value="Sky" onclick="alert('已根据您选择的内容筛选图片')">Sky</option>
+              <option value="Ocean" onclick="alert('已根据您选择的内容筛选图片')">Ocean</option>
+              <option value="Forest" onclick="alert('已根据您选择的内容筛选图片')">Forest</option>
+              <option value="Animal" onclick="alert('已根据您选择的内容筛选图片')">Animal</option>
+          </select>
+          <select name="country" onchange="set_city(this, this.form.city)">
+              <option value="0">Filter by Country</option>
+              <option value="China">China</option>
+              <option value="America">America</option>
+              <option value="Japan">Japan</option>
+              <option value="Korea">Korea</option>
+          </select>
+          <select name="city" id="cities">
+              <option value="0">Filter by City</option>
+          </select>
+          </form>
+          <table>
+              <tr>
+                  <td><a href="detail.html"><img src="images/display1.jpeg"></a></td>
+                  <td><a href="detail.html"><img src="images/display2.jpeg"></a></td>
+                  <td><a href="detail.html"><img src="images/display3.jpeg"></a></td>
+              </tr>
+              <tr>
+                  <td><a href="detail.html"><img src="images/display4.jpeg"></a></td>
+                  <td><a href="detail.html"><img src="images/display5.jpeg"></a></td>
+                  <td><a href="detail.html"><img src="images/display6.jpeg"></a></td>
+              </tr>
+              <tr>
+                  <td><a href="detail.html"><img src="images/display7.jpeg"></a></td>
+                  <td><a href="detail.html"><img src="images/display8.jpeg"></a></td>
+                  <td><a href="detail.html"><img src="images/display9.jpeg"></a></td>
+              </tr>
+          </table>
+          <ul class="nextpage">
+              <li><a href="#"><<</a></li>
+              <li><a href="#"><strong>1</strong></a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">>></a></li>
+          </ul>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <p>Copyright &copy; 2020-2025 WatermelonMillionaire.All Rights Reserved.</p>
+</div>
+
+</body>
+</html>

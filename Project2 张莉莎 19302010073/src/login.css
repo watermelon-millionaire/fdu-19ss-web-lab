@@ -1,0 +1,41 @@
+body{
+    background-image: url('images/login.jpeg');
+    background-size: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+footer{
+    color:white;
+}
+
+div{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 35%;
+    padding-left: 40%;
+}
+body{
+    font-family: "Comic Sans MS",cursive,sans-serif;
+    color: antiquewhite;
+}
+input{
+    background-color: antiquewhite;
+    border:none;
+    border-radius:6px;
+    height:2em;
+}
+.button {
+    background-color: antiquewhite;
+    border: none;
+    color: darkgrey;
+    text-align: center;
+    font-size:16px;
+    border-radius: 8px;
+    font-family: "Comic Sans MS",cursive,sans-serif;
+    margin-left: 35px;
+}
+
